@@ -1,11 +1,15 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 
 function Header() {
   return (
-    <div className=''>Header</div>
-  )
+    <div className="sticky top-0 flex items-center justify-between h-16 px-4 py-4  ">
+      <div />
+
+      <div className="w-[50px] h-[50px] bg-blue-300 rounded-full"></div>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

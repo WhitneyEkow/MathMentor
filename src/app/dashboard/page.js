@@ -1,11 +1,15 @@
-"use client"
+"use client";
 
-import React from 'react'
+import CoursesHeroPage from "@/components/courses/CoursesHeroPage";
+import React from "react";
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
-  )
+    <div className="w-full h-full ">
+      
+      <CoursesHeroPage />
+    </div>
+  );
 }
 
-export default Dashboard
+export default Dashboard;
