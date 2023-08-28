@@ -1,11 +1,12 @@
 "use client"
 
+import CoursesHeroPage from '@/components/courses/CoursesHeroPage'
 import React from 'react'
 
 function MyCourses() {
   return (
-    <div>MyCourses</div>
-  )
+    <CoursesHeroPage />
+    )
 }
 
 export default MyCourses

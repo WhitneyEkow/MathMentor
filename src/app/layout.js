@@ -5,6 +5,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Sidebar from "@/components/sidebar";
 import Header from "@/components/header";
+import { useContext } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,9 @@ const inter = Inter({ subsets: ["latin"] });
 // }
 
 export default function RootLayout({ children }) {
+  const GlobalStat = useContext(GlobalContext);
+  console.log(GlobalStat, "sd")
+
   return (
     <html lang="en">
       <body className={inter.className}>
