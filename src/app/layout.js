@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <GlobalState>
           <div className="flex w-full h-screen overflow-y-scroll">
             <Sidebar />
-            <div className="w-[98%] ml-[16%]">
+            <div className="w-[100%] sm:w-[85%] ml-[0%] sm:ml-[15%] ">
               <Header />
               <main>
                 <div className="mx-auto p-4 md:p-6 2xl:p-8">{children}</div>
