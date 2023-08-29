@@ -72,9 +72,9 @@ function Levels() {
   ];
   return (
     <div className="mt-6 ">
-      {levels.map((level) => {
+      {levels.map((level, index) => {
         return (
-          <div className="mt-12">
+          <div key={`${level.name}-${index}`} className="mt-12">
             <h3 className="text-2xl font-bold ">{level.name}</h3>
             <div className="grid grid-flow-col overflow-x-scroll mt-8 gap-10 p-4 w-[90%] mx-auto ring-1 ring-slate-900/5  ">
               {level.courses.map((course) => {
