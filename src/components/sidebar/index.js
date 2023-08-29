@@ -83,10 +83,10 @@ function Sidebar() {
             {menuItems.map((item) => (
               <li key={item.id} onClick={handleNavigate(item)}>
                 <label
-                  className={`flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group
+                  className={`flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group
                     ${
                       pathname.includes(item.id)
-                        ? "bg-gray-100 dark:bg-gray-700"
+                        ? "bg-gray-300 dark:bg-gray-700"
                         : ""
                     }
                   `}
