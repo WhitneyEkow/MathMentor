@@ -35,7 +35,7 @@ function Header() {
                   router.push(href);
                 }}
               >
-                {isHome ? "Home" : label}
+                {label}
               </Breadcrumb.Item>
             );
           })}
