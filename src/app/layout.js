@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   const GlobalStat = useContext(GlobalContext);
-  console.log(GlobalStat, "sd")
+  console.log(GlobalStat, "sd");
 
   return (
     <html lang="en">
@@ -24,10 +24,12 @@ export default function RootLayout({ children }) {
         <GlobalState>
           <div className="flex w-full h-screen overflow-y-scroll">
             <Sidebar />
-            <div className="w-[100%] sm:w-[85%] ml-[0%] sm:ml-[15%] ">
+            <div className="relative w-[100%] sm:w-[85%] ml-[0%] sm:ml-[15%] ">
               <Header />
               <main className="overflow-hidden">
-                <div className="mx-auto p-4 md:p-6 2xl:p-8 overflow-hidden">{children}</div>
+                <div className="mx-auto p-4 md:p-6 2xl:p-8 overflow-hidden text-black dark:text-white dark:bg-[#080b13]">
+                  {children}
+                </div>
               </main>
             </div>
           </div>

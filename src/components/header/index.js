@@ -16,7 +16,7 @@ function Header() {
   }, [pathname]);
 
   return (
-    <div className="sticky top-0 flex items-center justify-between h-16 px-4 py-4  ">
+    <div className="sticky top-0 flex items-center justify-between h-16 px-4 py-4  shadow-2xl bg-gray-100 dark:bg-[#111827]">
       <div />
 
       <div className="flex items-center space-x-4">
@@ -42,8 +42,9 @@ function Header() {
           })}
         </Breadcrumb>
       </div>
-      <Link className="w-[50px] h-[50px] bg-blue-300 rounded-full"
-      href={"/profile"}
+      <Link
+        className="w-[50px] h-[50px] bg-blue-300 rounded-full"
+        href={"/profile"}
       ></Link>
     </div>
   );

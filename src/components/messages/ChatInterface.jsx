@@ -8,7 +8,7 @@ function ChatInterface({children}) {
 
 
   return (
-    <div className="h-[80vh] md:h-[88vh] w-full bg-gray-800 flex flex-col justify-between rounded-lg overflow-hidden ">
+    <div className="h-[80vh] md:h-[88vh] w-full bg-gray-200 dark:bg-gray-800 flex flex-col justify-between rounded-lg overflow-hidden ">
       <div className="w-full h-[80%] overflow-y-scroll p-4">
             {children}
       </div>

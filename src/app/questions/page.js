@@ -16,7 +16,7 @@ function Questions() {
         // map over the years array and return a div for each year
         years.map((year) => {
           return (
-            <div className="w-1/5 px-2 py-4 hover:shadow-2xl text-center bg-gray-800 mt-4 rounded-lg cursor-pointer">
+            <div className="w-1/5 px-2 py-4 hover:shadow-2xl text-center bg-gray-200 dark:bg-gray-800 mt-4 rounded-lg cursor-pointer">
               <div className="text-2xl font-bold">{year}</div>
             </div>
           );

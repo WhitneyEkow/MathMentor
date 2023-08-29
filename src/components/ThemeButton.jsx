@@ -8,7 +8,7 @@ function ThemeButton() {
   const { resolvedTheme, setTheme } = useTheme();
   return (
     <div
-      className="flex gap-4 w-full items-center p-2 text-base font-normal dark:text-white text-black rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700"
+      className="flex cursor-pointer gap-4 w-full items-center p-2 text-base font-normal dark:text-white text-black rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 mt-10"
       onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
     >
       {resolvedTheme === "light" ? (
