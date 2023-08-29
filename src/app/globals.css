@@ -21,11 +21,7 @@
 }
 body {
   color: rgb(var(--foreground-rgb));
-  background: #111827;
 }
 
 
 
-aside {
-  background: #111827;
-}

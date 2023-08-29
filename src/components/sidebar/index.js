@@ -8,6 +8,7 @@ import { GoQuestion } from "react-icons/go";
 import { CgLogOut } from "react-icons/cg";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { usePathname, useRouter } from "next/navigation";
+import ThemeButton from "../ThemeButton";
 
 const menuItems = [
   {
@@ -96,16 +97,8 @@ function Sidebar() {
               </li>
             ))}
           </ul>
-          {/* <div className="  mt-6 space-y-2  text-white">
-            <button className="flex gap-4 w-full items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-              <MdLightMode color="black" size={20} />
-              toggle light mode
-            </button>
-            <button className="flex gap-4 w-full items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-gray-700">
-              <MdDarkMode color="white" size={20} />
-              toggle dark mode
-            </button>
-          </div> */}
+          <ThemeButton />
+
         </div>
       </aside>
     </div>

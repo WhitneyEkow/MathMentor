@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useState } from "react";
-
+import { ThemeProvider } from "next-themes";
 export const GlobalContext = createContext({});
 
 export default function GlobalState({ children }) {
@@ -14,7 +14,7 @@ export default function GlobalState({ children }) {
         setSidebarOpen,
       }}
     >
-      {children}
+      <ThemeProvider attribute="class">{children}</ThemeProvider>
     </GlobalContext.Provider>
   );
 }
