@@ -39,7 +39,7 @@ function MessagesHeroTwo() {
       </div>
       <div className="mt-2 flex justify-center">
         <Link
-          href="#"
+          href="/my-courses"
           className="text-center text-4xl font-bold text-white  mt-4"
         >
           MY COURSES

@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { Breadcrumb } from "flowbite-react";
+import Link from "next/link";
 
 function Header() {
   const pathname = usePathname();
@@ -41,7 +42,9 @@ function Header() {
           })}
         </Breadcrumb>
       </div>
-      <div className="w-[50px] h-[50px] bg-blue-300 rounded-full"></div>
+      <Link className="w-[50px] h-[50px] bg-blue-300 rounded-full"
+      href={"/profile"}
+      ></Link>
     </div>
   );
 }

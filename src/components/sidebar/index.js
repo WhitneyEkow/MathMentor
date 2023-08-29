@@ -30,7 +30,7 @@ const menuItems = [
   },
   {
     id: "questions",
-    label: "Questions",
+    label: "Past Questions",
     path: "/questions",
     icon: <GoQuestion />,
   },
