@@ -16,7 +16,7 @@ function Header() {
   }, [pathname]);
 
   return (
-    <div className="sticky top-0 flex items-center justify-between h-16 px-4 py-4  shadow-2xl bg-gray-100 dark:bg-[#111827]">
+    <div className="sticky top-0 flex items-center justify-between h-16 px-4 py-4 z-10 shadow-2xl bg-white dark:bg-[#111827]">
       <div />
 
       <div className="flex items-center space-x-4">

@@ -76,12 +76,12 @@ function Levels() {
         return (
           <div className="mt-12">
             <h3 className="text-2xl font-bold ">{level.name}</h3>
-            <div className="grid grid-flow-col overflow-x-scroll mt-8 gap-10 py-2 w-[90%] mx-auto ring-1 ring-slate-900/5  ">
+            <div className="grid grid-flow-col overflow-x-scroll mt-8 gap-10 p-4 w-[90%] mx-auto ring-1 ring-slate-900/5  ">
               {level.courses.map((course) => {
                 return (
                   <div
                     key={course.name}
-                    className="w-[350px] relative h-[200px] bg-gray-800 hover:shadow-2xl rounded-md shadow-lg flex items-center justify-center flex-col cursor-pointer"
+                    className="w-[350px] relative h-[200px]  dark:bg-gray-800 hover:shadow-xl rounded-md shadow-lg flex items-center justify-center flex-col cursor-pointer ring-1 ring-slate-900/5 "
                   >
                     <h3 className="text-2xl font-bold sm:text-3xl md:text-4xl">
                       {course.name}

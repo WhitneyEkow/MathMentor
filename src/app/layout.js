@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   console.log(GlobalStat, "sd");
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <GlobalState>
           <div className="flex w-full h-screen overflow-y-scroll">
