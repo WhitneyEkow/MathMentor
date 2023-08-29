@@ -1,11 +1,13 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 
 function Guest() {
   return (
-    <div>Guest</div>
-  )
+    <div className="">
+  guest page
+    </div>
+  );
 }
 
-export default Guest
+export default Guest;
