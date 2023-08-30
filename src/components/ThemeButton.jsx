@@ -19,12 +19,12 @@ function ThemeButton() {
       {resolvedTheme === "light" ? (
         <>
           <MdDarkMode color="black" size={20} />
-          {isAuthenticated && " toggle dark mode"}
+          toggle dark mode
         </>
       ) : (
         <>
           <MdLightMode color="white" size={20} />
-          {isAuthenticated && " toggle light mode"}
+          toggle light mode
         </>
       )}
     </div>
