@@ -43,11 +43,13 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <GlobalState>
           <div className="flex w-full h-screen overflow-y-scroll">
-            <Sidebar />
-            <div className="relative w-[100%] sm:w-[85%] ml-[0%] sm:ml-[15%] ">
+            <div className="w-[16%]">
+              <Sidebar />
+            </div>
+            <div className="relative w-[84%] ">
               <Header />
-              <main className="overflow-hidden">
-                <div className="mx-auto text-black dark:text-white dark:bg-[#080b13]">
+              <main className="overflow-hidden ">
+                <div className=" text-black dark:text-white dark:bg-[#080b13]  p-6">
                   {children}
                 </div>
               </main>

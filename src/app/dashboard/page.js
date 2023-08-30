@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Dashboard() {
   return (
-    <div className="">
+    <div className="h-[92.6vh] ">
       <h3 className="text-2xl font-bold sm:text-3xl md:text-4xl">
         Welcome User,
       </h3>
