@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
   if (
     pathname.includes("guest") ||
     pathname.includes("login") ||
+    pathname.includes("signup") ||
     pathname === "/"
   ) {
     return (
