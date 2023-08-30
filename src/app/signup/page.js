@@ -3,14 +3,11 @@
 import React, { useState } from "react";
 import { Box, TextField, Button, Spinner } from "@mui/material";
 import Link from "next/link";
-// import "./Page.css";
+import { useRouter } from "next/navigation";
 
 function SignUp() {
   const [loading, setLoading] = useState(false);
-  const redirectToLogin = () => {
-    window.location.replace("/login");
-  };
-
+  const router = useRouter();
   return (
     <div className="w-full flex bg-white h-screen">
       <div className=" w-[50%]  h-full bg-[url('/loginWallpaper.png')] bg-contain relative">
@@ -88,16 +85,13 @@ function SignUp() {
                 placeholder="* * * * * * *"
               />
             </div>
-            <div>
-              <Button
-                className="w-full  mb-6 text-black bg-gray-200"
-                fullWidth
-                size="large"
-                type="submit"
-                variant="contained"
+            <div className="w-full flex justify-center ">
+              <Link
+                className="  py-2 px-8 rounded-md shadow-md active:bg-blue-400 active:text-white cursor-pointer mb-6 text-black bg-gray-200"
+                href={"/onboarding"}
               >
-                {loading ? "Signing Up" : "Sign Up"}
-              </Button>
+                Sign Up
+              </Link>
             </div>
 
             <div>

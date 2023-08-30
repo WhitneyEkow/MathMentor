@@ -3,9 +3,11 @@
 import React, { useState } from "react";
 import { Box, TextField, Button, Spinner, Checkbox } from "@mui/material";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 // import "./Page.css";
 
 function Login() {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const redirectToLogin = () => {
     window.location.replace("/login");
@@ -40,7 +42,7 @@ function Login() {
         <Box
           component="form"
           className="w-[60%]  "
-          noValidate
+          noValidate={true}
           autoComplete="off"
         >
           <h1 className="text-5xl text-[#00A0FB] font-bold text-center mb-4">
@@ -63,7 +65,7 @@ function Login() {
               <TextField
                 className="w-full  mb-6 "
                 required
-                id="outlined-required"
+                // id="outlined-required"
                 label="Email Address"
                 defaultValue=""
                 placeholder="Email Address"
@@ -73,23 +75,20 @@ function Login() {
               <TextField
                 className="w-full   "
                 required
-                id="outlined-required"
+                // id="outlined-required"
                 label="Password"
                 defaultValue=""
                 placeholder="* * * * * * *"
               />
             </div>
             <p className="text-right text-black mb-6 mt-1">Forgot Password?</p>
-            <div>
-              <Button
-                className="w-full  mb-6 text-black bg-gray-200"
-                fullWidth
-                size="large"
-                type="submit"
-                variant="contained"
+            <div className="w-full flex justify-center ">
+              <Link
+                className="  py-2 px-8 rounded-md shadow-md active:bg-blue-400 active:text-white cursor-pointer mb-6 text-black bg-gray-200"
+                href={"/onboarding"}
               >
-                {loading ? "Signing In" : "Sign In"}
-              </Button>
+                Login
+              </Link>
             </div>
 
             <div>
