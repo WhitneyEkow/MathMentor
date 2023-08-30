@@ -1,11 +1,15 @@
 "use client";
 
+import { useGlobal } from "@/context";
 import { Button } from "flowbite-react";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 function LogOut() {
+  const router = useRouter();
+  const { setIsAuthenticated } = useGlobal();
   return (
-    <div className="w-full min-h-[70vh]">
+    <div className="w-full h-[87vh]">
       <div className="w-full h-[60vh] flex justify-center items-center">
         <div className="w-full ">
           <h2 className="text-4xl font-bold text-center mb-4">
@@ -16,7 +20,14 @@ function LogOut() {
           </h2>
 
           <div className="flex items-center w-full justify-center mt-16">
-            <Button>Log Out</Button>
+            <Button
+              onClick={() => {
+                setIsAuthenticated(false);
+                router.push("/login");
+              }}
+            >
+              Log Out
+            </Button>
           </div>
         </div>
       </div>

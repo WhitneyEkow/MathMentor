@@ -4,14 +4,13 @@ import React, { useState } from "react";
 import { Box, TextField, Button, Spinner, Checkbox } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useGlobal } from "@/context";
 // import "./Page.css";
 
 function Login() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const redirectToLogin = () => {
-    window.location.replace("/login");
-  };
+  const { setIsAuthenticated } = useGlobal();
 
   return (
     <div className="w-full flex bg-white h-screen">
@@ -82,13 +81,19 @@ function Login() {
               />
             </div>
             <p className="text-right text-black mb-6 mt-1">Forgot Password?</p>
-            <div className="w-full flex justify-center ">
-              <Link
+            <div
+              className="w-full flex justify-center "
+              onClick={() => {
+                setIsAuthenticated(true);
+                router.push("/dashboard");
+              }}
+            >
+              <p
                 className="  py-2 px-8 rounded-md shadow-md active:bg-blue-400 active:text-white cursor-pointer mb-6 text-black bg-gray-200"
-                href={"/onboarding"}
+                // href={"/onboarding"}
               >
                 Login
-              </Link>
+              </p>
             </div>
 
             <div>
